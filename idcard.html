@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styling the body */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    /* ID Card container */
+    .id-card {
+      width: 350px;
+      height: auto;
+      background: white;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Header of ID card */
+    .id-card-header {
+      background: linear-gradient(90deg, #4caf50, #66bb6a);
+      color: white;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Profile picture section */
+    .profile-pic {
+      margin-top: 20px;
+    }
+
+    .profile-pic img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid gold;
+      object-fit: cover;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ID card details */
+    .id-details {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      padding: 0 15px;
+    }
+
+    .id-details h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #4caf50;
+      text-transform: capitalize;
+    }
+
+    .id-details p {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+
+    .id-details strong {
+      color: #000;
+    }
+
+    /* Footer section */
+    .id-footer {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 400px) {
+      .id-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="id-card">
+    <div class="id-card-header">Tech Innovators Ltd.</div>
+    <div class="profile-pic">
+      <img src="profile2.jpg" alt="Profile Picture">
+    </div>
+    <div class="id-details">
+      <h2>Kunal Chablani</h2>
+      <p><strong>Position:</strong> Software Developer</p>
+      <p><strong>ID:</strong> 12345</p>
+      <p><strong>Email:</strong> chablanikunal747@gmail.com</p>
+    </div>
+    <div class="id-footer">Issued by: HR Department</div>
+  </div>
+</body>
+</html>
